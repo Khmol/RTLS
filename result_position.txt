@@ -1,0 +1,660 @@
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934065
+    latitude_1:      46.7576443
+    speed_1:           0.066672
+    altitude_1:        25
+    altitudeMSL_1:    3.
+    accuracyPDOP_1:  1.51
+    accuracyHDOP_1:  0.72
+    accuracyVDOP_1:  1.33
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934061
+    latitude_1:      46.7576446
+    speed_1:         0.11852800
+    altitude_1:        25
+    altitudeMSL_1:    3.
+    accuracyPDOP_1:  1.51
+    accuracyHDOP_1:  0.72
+    accuracyVDOP_1:  1.33
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934061
+    latitude_1:      46.7576446
+    speed_1:         0.11852800
+    altitude_1:        25
+    altitudeMSL_1:    3.
+    accuracyPDOP_1:  1.51
+    accuracyHDOP_1:  0.72
+    accuracyVDOP_1:  1.33
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934041
+    latitude_1:      46.7576476
+    speed_1:           0.116676
+    altitude_1:        24
+    altitudeMSL_1:    3.
+    accuracyPDOP_1:  1.59
+    accuracyHDOP_1:  0.76
+    accuracyVDOP_1:  1.39
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934041
+    latitude_1:      46.7576476
+    speed_1:           0.116676
+    altitude_1:        24
+    altitudeMSL_1:    3.
+    accuracyPDOP_1:  1.59
+    accuracyHDOP_1:  0.76
+    accuracyVDOP_1:  1.39
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934015
+    latitude_1:      46.7576503
+    speed_1:           0.044448
+    altitude_1:        24
+    altitudeMSL_1:    3.
+    accuracyPDOP_1:  2.15
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:  1.91
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934001
+    latitude_1:      46.7576515
+    speed_1:         0.10371200
+    altitude_1:        24
+    altitudeMSL_1:    3.
+    accuracyPDOP_1:   1.6
+    accuracyHDOP_1:  0.82
+    accuracyVDOP_1:  1.37
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933975
+    latitude_1:      46.7576526
+    speed_1:         0.03148400
+    altitude_1:        23
+    altitudeMSL_1:    2.
+    accuracyPDOP_1:   1.6
+    accuracyHDOP_1:  0.82
+    accuracyVDOP_1:  1.37
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933886
+    latitude_1:      46.7576563
+    speed_1:         0.12223200
+    altitude_1:        23
+    altitudeMSL_1:    2.
+    accuracyPDOP_1:   1.6
+    accuracyHDOP_1:  0.82
+    accuracyVDOP_1:  1.37
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933886
+    latitude_1:      46.7576563
+    speed_1:         0.12223200
+    altitude_1:        23
+    altitudeMSL_1:    2.
+    accuracyPDOP_1:  1.52
+    accuracyHDOP_1:  0.73
+    accuracyVDOP_1:  1.33
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:      36.793341
+    latitude_1:      46.7576833
+    speed_1:         0.11482400
+    altitude_1:     10.10
+    altitudeMSL_1: -11.2
+    accuracyPDOP_1:     0
+    accuracyHDOP_1:     0
+    accuracyVDOP_1:     0
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933645
+    latitude_1:       46.757668
+    speed_1:           0.048152
+    altitude_1:      14.0
+    altitudeMSL_1:  -7.3
+    accuracyPDOP_1:   2.0
+    accuracyHDOP_1:  0.93
+    accuracyVDOP_1:  1.77
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933761
+    latitude_1:       46.757659
+    speed_1:         0.03704000
+    altitude_1:      14.0
+    altitudeMSL_1:  -7.3
+    accuracyPDOP_1:   2.0
+    accuracyHDOP_1:  0.93
+    accuracyVDOP_1:  1.77
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933831
+    latitude_1:      46.7576533
+    speed_1:           0.072228
+    altitude_1:      17.1
+    altitudeMSL_1:  -4.2
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933831
+    latitude_1:      46.7576533
+    speed_1:           0.072228
+    altitude_1:      17.1
+    altitudeMSL_1:  -4.2
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933878
+    latitude_1:       46.757649
+    speed_1:           0.100008
+    altitude_1:     17.90
+    altitudeMSL_1:  -3.4
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933868
+    latitude_1:      46.7576483
+    speed_1:         0.04630000
+    altitude_1:      17.5
+    altitudeMSL_1:  -3.8
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933858
+    latitude_1:      46.7576481
+    speed_1:           0.085192
+    altitude_1:      17.1
+    altitudeMSL_1:  -4.2
+    accuracyPDOP_1:   1.8
+    accuracyHDOP_1:  0.97
+    accuracyVDOP_1:  1.52
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933893
+    latitude_1:      46.7576446
+    speed_1:           0.050004
+    altitude_1:      17.1
+    altitudeMSL_1:  -4.2
+    accuracyPDOP_1:   1.8
+    accuracyHDOP_1:  0.97
+    accuracyVDOP_1:  1.52
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933893
+    latitude_1:      46.7576446
+    speed_1:           0.050004
+    altitude_1:      17.7
+    altitudeMSL_1:  -3.6
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:      36.793392
+    latitude_1:      46.7576418
+    speed_1:         0.05185600
+    altitude_1:      18.2
+    altitudeMSL_1:  -3.1
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:      36.793392
+    latitude_1:      46.7576418
+    speed_1:         0.05185600
+    altitude_1:      18.2
+    altitudeMSL_1:  -3.1
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933941
+    latitude_1:      46.7576393
+    speed_1:           0.042596
+    altitude_1:      18.5
+    altitudeMSL_1:  -2.8
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:      36.793393
+    latitude_1:      46.7576396
+    speed_1:         0.16853200
+    altitude_1:      18.2
+    altitudeMSL_1:  -3.1
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:      36.793393
+    latitude_1:      46.7576396
+    speed_1:         0.16853200
+    altitude_1:      18.2
+    altitudeMSL_1:  -3.1
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7933918
+    latitude_1:        46.75764
+    speed_1:           0.068524
+    altitude_1:      17.8
+    altitudeMSL_1:  -3.5
+    accuracyPDOP_1:  1.73
+    accuracyHDOP_1:  0.86
+    accuracyVDOP_1:  1.51
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934016
+    latitude_1:      46.7576093
+    speed_1:         0.07037600
+    altitude_1:      25.6
+    altitudeMSL_1:   4.3
+    accuracyPDOP_1:  1.58
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:  1.24
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934018
+    latitude_1:      46.7576093
+    speed_1:           0.022224
+    altitude_1:      25.6
+    altitudeMSL_1:   4.3
+    accuracyPDOP_1:  1.58
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:  1.24
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934018
+    latitude_1:      46.7576095
+    speed_1:           0.016668
+    altitude_1:      25.5
+    altitudeMSL_1:   4.2
+    accuracyPDOP_1:  1.49
+    accuracyHDOP_1:  0.87
+    accuracyVDOP_1:   1.2
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934018
+    latitude_1:      46.7576095
+    speed_1:           0.016668
+    altitude_1:      25.5
+    altitudeMSL_1:   4.2
+    accuracyPDOP_1:  1.49
+    accuracyHDOP_1:  0.87
+    accuracyVDOP_1:   1.2
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934021
+    latitude_1:      46.7576096
+    speed_1:           0.066672
+    altitude_1:      25.5
+    altitudeMSL_1:   4.2
+    accuracyPDOP_1:  1.49
+    accuracyHDOP_1:  0.87
+    accuracyVDOP_1:   1.2
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934025
+    latitude_1:      46.7576095
+    speed_1:           0.077784
+    altitude_1:      25.6
+    altitudeMSL_1:   4.3
+    accuracyPDOP_1:  1.49
+    accuracyHDOP_1:  0.87
+    accuracyVDOP_1:   1.2
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934023
+    latitude_1:      46.7576095
+    speed_1:         0.03704000
+    altitude_1:      25.5
+    altitudeMSL_1:   4.2
+    accuracyPDOP_1:  1.52
+    accuracyHDOP_1:  0.92
+    accuracyVDOP_1:  1.21
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934021
+    latitude_1:      46.7576096
+    speed_1:            0.10186
+    altitude_1:      25.5
+    altitudeMSL_1:   4.2
+    accuracyPDOP_1:  1.52
+    accuracyHDOP_1:  0.92
+    accuracyVDOP_1:  1.21
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934023
+    latitude_1:      46.7576096
+    speed_1:           0.020372
+    altitude_1:      25.5
+    altitudeMSL_1:   4.2
+    accuracyPDOP_1:  1.32
+    accuracyHDOP_1:  0.72
+    accuracyVDOP_1:  1.11
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934023
+    latitude_1:      46.7576096
+    speed_1:           0.020372
+    altitude_1:      25.5
+    altitudeMSL_1:   4.2
+    accuracyPDOP_1:  1.32
+    accuracyHDOP_1:  0.72
+    accuracyVDOP_1:  1.11
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934026
+    latitude_1:      46.7576093
+    speed_1:         0.09074800
+    altitude_1:      25.5
+    altitudeMSL_1:   4.2
+    accuracyPDOP_1:  1.41
+    accuracyHDOP_1:  0.81
+    accuracyVDOP_1:  1.15
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934026
+    latitude_1:      46.7576093
+    speed_1:            0.02778
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.41
+    accuracyHDOP_1:  0.81
+    accuracyVDOP_1:  1.15
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934026
+    latitude_1:      46.7576093
+    speed_1:         0.05741200
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.41
+    accuracyHDOP_1:  0.81
+    accuracyVDOP_1:  1.15
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934026
+    latitude_1:      46.7576091
+    speed_1:         0.01852000
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.41
+    accuracyHDOP_1:  0.81
+    accuracyVDOP_1:  1.15
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934026
+    latitude_1:      46.7576091
+    speed_1:         0.01852000
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.57
+    accuracyHDOP_1:   0.9
+    accuracyVDOP_1:  1.29
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934026
+    latitude_1:      46.7576091
+    speed_1:         0.10741600
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.57
+    accuracyHDOP_1:   0.9
+    accuracyVDOP_1:  1.29
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934026
+    latitude_1:      46.7576091
+    speed_1:         0.10741600
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.57
+    accuracyHDOP_1:   0.9
+    accuracyVDOP_1:  1.29
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934023
+    latitude_1:      46.7576095
+    speed_1:         0.06111600
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.57
+    accuracyHDOP_1:   0.9
+    accuracyVDOP_1:  1.29
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934025
+    latitude_1:      46.7576093
+    speed_1:         0.07408000
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.57
+    accuracyHDOP_1:   0.9
+    accuracyVDOP_1:  1.29
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934025
+    latitude_1:      46.7576093
+    speed_1:         0.07408000
+    altitude_1:      25.4
+    altitudeMSL_1:   4.1
+    accuracyPDOP_1:  1.57
+    accuracyHDOP_1:   0.9
+    accuracyVDOP_1:  1.29
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934016
+    latitude_1:      46.7576096
+    speed_1:         0.03518800
+    altitude_1:      25.3
+    altitudeMSL_1:   4.0
+    accuracyPDOP_1:  1.57
+    accuracyHDOP_1:   0.9
+    accuracyVDOP_1:  1.29
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934015
+    latitude_1:      46.7576115
+    speed_1:         0.07593200
+    altitude_1:      27.9
+    altitudeMSL_1:   6.6
+    accuracyPDOP_1:  1.65
+    accuracyHDOP_1:  0.96
+    accuracyVDOP_1:  1.34
+    mode_1:                3D
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934015
+    latitude_1:      46.7576116
+    speed_1:           0.024076
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934015
+    latitude_1:      46.7576116
+    speed_1:           0.024076
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934015
+    latitude_1:      46.7576125
+    speed_1:         0.05926400
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934016
+    latitude_1:       46.757613
+    speed_1:            0.06482
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934016
+    latitude_1:      46.7576135
+    speed_1:         0.05926400
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934016
+    latitude_1:      46.7576141
+    speed_1:           0.033336
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934016
+    latitude_1:      46.7576141
+    speed_1:           0.033336
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934016
+    latitude_1:      46.7576146
+    speed_1:           0.068524
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934016
+    latitude_1:      46.7576146
+    speed_1:           0.068524
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934015
+    latitude_1:      46.7576155
+    speed_1:           0.011112
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934015
+    latitude_1:       46.757616
+    speed_1:         0.03518800
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.72
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT
+address: 172.16.2.128
+time:                
+    longitude_1:     36.7934015
+    latitude_1:      46.7576166
+    speed_1:         0.08704400
+    altitude_1:      28.0
+    altitudeMSL_1:   6.7
+    accuracyPDOP_1:  1.71
+    accuracyHDOP_1:  0.98
+    accuracyVDOP_1:   1.4
+    mode_1:          3D/FLOAT

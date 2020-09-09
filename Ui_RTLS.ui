@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RTLS</class>
+ <widget class="QMainWindow" name="RTLS">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>815</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>415</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>5000</width>
+    <height>5000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Формирователь спецификации</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Users/User/.designer/backup/11.ico</normaloff>
+    <normalon>../../../Users/User/.designer/backup/11.ico</normalon>../../../Users/User/.designer/backup/11.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_TitleRover1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Координаты ровера 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Pause">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>740</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Пауза</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_NomRx">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>740</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Longitude_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>55</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWebView" name="webView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>650</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>about:blank</string>
+     </url>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TitleRover2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>5</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Координаты ровера 2</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_NomRover_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_NomRover_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>IP ровера</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_NomRover_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>30</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_NomRover_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>30</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>IP ровера</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Longitude_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>55</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Долгота</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Longitude_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>55</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Longitude_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>55</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Долгота</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Latitude_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>80</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Latitude_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Latitude_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>80</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Широта</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Latitude_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Широта</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TitleNomRx">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>740</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Принято пакетов:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Mode_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>155</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Режим</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Mode_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>155</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Mode_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>155</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Mode_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>155</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Режим</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Altitude_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>105</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Высота</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Altitude_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>105</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Altitude_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>105</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Высота</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Altitude_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>105</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_AltitudeMSL_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>130</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Высота (MSL)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_AltitudeMSL_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Высота (MSL)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_AltitudeMSL_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>130</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_AltitudeMSL_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>130</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_PDOP_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>PDOP</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_PDOP_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>180</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_PDOP_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>180</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>PDOP</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_PDOP_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>180</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_HDOP_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>205</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_HDOP_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>205</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>HDOP</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_HDOP_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>205</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_HDOP_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>205</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>HDOP</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_VDOP_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>230</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_VDOP_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>230</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>VDOP</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_VDOP_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>230</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_VDOP_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>VDOP</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Spead_1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>255</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Spead_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>255</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Скорость, км/ч</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Spead_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>255</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Скорость, км/ч</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Spead_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>255</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_writeToFile">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>740</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Запись протокола в файл</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>659</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
