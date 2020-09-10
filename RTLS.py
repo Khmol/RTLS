@@ -1,5 +1,9 @@
 #coding: utf8
 from PyQt5.QtCore import QBasicTimer
+from PyQt5.QtGui import QColor
+from PyQt5.QtGui import QFont
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QPainter
 from Ui_RTLS import *
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
@@ -30,11 +34,15 @@ class RTLS(QtWidgets.QMainWindow):
         self.ui = Ui_RTLS()
         self.ui.setupUi(self)
         # инициализация переменных
+        self.pause = False
         self.positionFilename = ''
         self.file = None
+        self.zoom = DEFAULT_ZOOM
         self.timerTxCounter = 0
         self.rxCounter = 0
         self.speed = []
+        self.data = ''
+        self.time = ''
         self.roverAddress = []
         self.dataRx = []
         self.longitude = []
@@ -50,7 +58,7 @@ class RTLS(QtWidgets.QMainWindow):
         self.saveLongitude = []
         self.saveLatitude = []
 
-        self.ui.pushButton_Pause.clicked.connect(self.ShowPositions)        # формирование спецификации
+        self.ui.pushButton_Pause.clicked.connect(self.pbPauseHendler)        # формирование спецификации
         # читаем настройки из ini файла
         self.ReadSettings()
         self.ui.comboBox_NomRover_1.addItems(self.roverAddress)
@@ -78,6 +86,15 @@ class RTLS(QtWidgets.QMainWindow):
 
         self.startBasicTimer()
         self.mainTimer.start(DEFAULT_TIMER, self)
+
+    # *********************************************************************
+    def pbPauseHendler(self):
+        if self.ui.pushButton_Pause.isChecked():
+            self.pause = True
+            self.ui.pushButton_Pause.setText('Запуск')
+        else:
+            self.pause = False
+            self.ui.pushButton_Pause.setText('Пауза')
 
     # *********************************************************************
     def disableWidgets(self):
@@ -178,9 +195,9 @@ class RTLS(QtWidgets.QMainWindow):
         try:
             self.sockUDP = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             # передаем данные в sockUDP
+            self.sockUDP.bind(('', DEFAULT_SERVER_UDP_PORT))
             for addr in self.roverAddress:
                 # передаем данные в sockUDP
-                self.sockUDP.bind(('', DEFAULT_SERVER_UDP_PORT))
                 self.sockUDP.sendto(DEFAULT_TX_DATA, (addr, self.udpPort))
         except:
             out_str = "Такого порта нет. Введите корректное значение."
@@ -191,6 +208,8 @@ class RTLS(QtWidgets.QMainWindow):
 
     #*********************************************************************
     def checkDeltaPosition(self, indexRover):
+        if self.saveLongitude[indexRover] == 0 or self.saveLatitude[indexRover] == 0:
+            return True
         if self.saveLongitude[indexRover] > self.longitude[indexRover]:
             if (self.saveLongitude[indexRover] - self.longitude[indexRover]) > MIN_DELTA_LOAD_URL:
                 return True
@@ -212,7 +231,7 @@ class RTLS(QtWidgets.QMainWindow):
         indexRover2 = self.ui.comboBox_NomRover_2.currentIndex()
         if writeAnable:
             file.write('address: ' + self.ui.comboBox_NomRover_1.currentText() + '\n')
-            file.write('time: {:>15}\n'.format(''))
+            file.write('data: {} time: {}\n'.format(self.data, self.time))
         text = str(self.longitude[indexRover1])[:10]
         if writeAnable:
             file.write('    longitude_1: {:>14}\n'.format(text))
@@ -253,31 +272,59 @@ class RTLS(QtWidgets.QMainWindow):
             if self.checkDeltaPosition(indexRover1):
                 self.saveLongitude[indexRover1] = self.longitude[indexRover1]
                 self.saveLatitude[indexRover1] = self.latitude[indexRover1]
-                url = "http://static-maps.yandex.ru/1.x/?ll={},{}&size=650,450&z=19&l=sat,skl&pt={},{},pmdom1".format(
-                    self.longitudeMap, self.latitudeMap, self.saveLongitude[indexRover1], self.saveLatitude[indexRover1])
+                url = "http://static-maps.yandex.ru/1.x/?ll={},{}&size=650,450&z={}&l=sat,skl&pt={},{},pmdom1".format(
+                    self.longitudeMap, self.latitudeMap, self.zoom, self.saveLongitude[indexRover1], self.saveLatitude[indexRover1])
                 self.ui.webView.load(QtCore.QUrl(url))
             else:
                 pass
-                # print('нет изменений')
         else:
-            self.ui.lineEdit_Longitude_2.setText(str(self.longitude[indexRover2])[:10])
-            self.ui.lineEdit_Latitude_2.setText(str(self.latitude[indexRover2])[:10])
-            self.ui.lineEdit_Spead_2.setText(str(self.speed[indexRover2])[:10])
-            self.ui.lineEdit_Altitude_2.setText(str(self.altitude[indexRover2])[:10])
-            self.ui.lineEdit_AltitudeMSL_2.setText(str(self.altitudeMSL[indexRover2])[:10])
-            self.ui.lineEdit_PDOP_2.setText(str(self.accuracyPDOP[indexRover2])[:10])
-            self.ui.lineEdit_HDOP_2.setText(str(self.accuracyHDOP[indexRover2])[:10])
-            self.ui.lineEdit_VDOP_2.setText(str(self.accuracyVDOP[indexRover2])[:10])
-            self.ui.lineEdit_Mode_2.setText(str(self.mode[indexRover2]))
+            if writeAnable:
+                file.write('address: ' + self.ui.comboBox_NomRover_2.currentText() + '\n')
+                file.write('data: {} time: {}\n'.format(self.data, self.time))
+            text = str(self.longitude[indexRover2])[:10]
+            if writeAnable:
+                file.write('    longitude_2: {:>14}\n'.format(text))
+            self.ui.lineEdit_Longitude_2.setText(text)
+            text = str(self.latitude[indexRover2])[:10]
+            if writeAnable:
+                file.write('    latitude_2: {:>15}\n'.format(text))
+            self.ui.lineEdit_Latitude_2.setText(text)
+            text = str(self.speed[indexRover2])[:10]
+            self.ui.lineEdit_Spead_2.setText(text)
+            if writeAnable:
+                file.write('    speed_2: {:>18}\n'.format(text))
+            text = str(self.altitude[indexRover2])[:5]
+            self.ui.lineEdit_Altitude_2.setText(text)
+            if writeAnable:
+                file.write('    altitude_2: {:>9}\n'.format(text))
+            text = str(self.altitudeMSL[indexRover2])[:5]
+            self.ui.lineEdit_AltitudeMSL_2.setText(text)
+            if writeAnable:
+                file.write('    altitudeMSL_2: {:>5}\n'.format(text))
+            text = str(self.accuracyPDOP[indexRover2])[:10]
+            self.ui.lineEdit_PDOP_2.setText(text)
+            if writeAnable:
+                file.write('    accuracyPDOP_2: {:>5}\n'.format(text))
+            text = str(self.accuracyHDOP[indexRover2])[:10]
+            self.ui.lineEdit_HDOP_2.setText(text)
+            if writeAnable:
+                file.write('    accuracyHDOP_2: {:>5}\n'.format(text))
+            text = str(self.accuracyVDOP[indexRover2])[:10]
+            self.ui.lineEdit_VDOP_2.setText(text)
+            if writeAnable:
+                file.write('    accuracyVDOP_2: {:>5}\n'.format(text))
+            text = str(self.mode[indexRover2])
+            self.ui.lineEdit_Mode_2.setText(text)
+            if writeAnable:
+                file.write('    mode_2: {:>17}\n'.format(text))
             if self.checkDeltaPosition(indexRover1) or self.checkDeltaPosition(indexRover2):
                 self.saveLongitude[indexRover1] = self.longitude[indexRover1]
                 self.saveLatitude[indexRover1] = self.latitude[indexRover1]
                 self.saveLongitude[indexRover2] = self.longitude[indexRover2]
                 self.saveLatitude[indexRover2] = self.latitude[indexRover2]
-                url = "https://static-maps.yandex.ru/1.x/?ll={},{}&size=650,450&z=19&l=sat," \
-                      "skl&pt={},{},pmdom1~{},{},pmdom2".format(self.longitudeMap, self.latitudeMap,
-                        self.saveLongitude[indexRover1], self.saveLatitude[indexRover1],
-                        self.saveLongitude[indexRover2], self.saveLatitude[indexRover2])
+                url = "http://static-maps.yandex.ru/1.x/?ll={:.10},{:.10}&size=650,450&z={}&l=sat,skl&pt={:.10},{:.10},pmdom1~{:.10},{:.10},pmdom2".format(
+                    self.longitudeMap, self.latitudeMap, self.zoom, self.saveLongitude[indexRover1], self.saveLatitude[indexRover1],
+                    self.saveLongitude[indexRover2], self.saveLatitude[indexRover2])
                 self.ui.webView.load(QtCore.QUrl(url))
 
     # *********************************************************************
@@ -286,7 +333,8 @@ class RTLS(QtWidgets.QMainWindow):
         добавить данные к allDataRx
         :return:
         '''
-        self.dataRx.append([ Convert_ArrBite_to_ArrChar(data),
+        if self.pause == False:
+            self.dataRx.append([ Convert_ArrBite_to_ArrChar(data),
                             str(address), str(port)])
 
     #*********************************************************************
@@ -309,7 +357,7 @@ class RTLS(QtWidgets.QMainWindow):
     def GetCommandList(self, command, parseAddress, parsePort, parseData, lengthCommand, typeCommand):
         commandList = command.split(',')
         if len(commandList) < lengthCommand:
-            time.sleep(0.02)
+            time.sleep(0.03)
             if len(self.dataRx) > 0:
                 dataAdd = self.dataRx.pop(0)
                 parseDataAdd, parseAddressAdd, parsePortAdd = dataAdd
@@ -385,6 +433,8 @@ class RTLS(QtWidgets.QMainWindow):
 
     #*********************************************************************
     def calculatePosition(self, comList, pos):
+        self.data = comList[DATA_POS]
+        self.time = comList[TIME_POS]
         deg = int(comList[LATITUDE_POS][0:2])
         min = float(comList[LATITUDE_POS][2:])
         self.latitude[pos] = deg + min / 60

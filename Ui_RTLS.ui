@@ -64,6 +64,9 @@
     <property name="text">
      <string>Пауза</string>
     </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_NomRx">
     <property name="geometry">
@@ -695,6 +698,22 @@
     </property>
     <property name="text">
      <string>Запись протокола в файл</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
     </property>
    </widget>
   </widget>
