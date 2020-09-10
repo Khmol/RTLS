@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0fc8f63-91d3-4bb0-bba7-268aebb3d1a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RTLS.py" afterPath="$PROJECT_DIR$/RTLS.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ui_RTLS.py" afterPath="$PROJECT_DIR$/Ui_RTLS.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ui_RTLS.ui" afterPath="$PROJECT_DIR$/Ui_RTLS.ui" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.ini" afterPath="$PROJECT_DIR$/settings.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -420,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599744859497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Проверено с 2-мя роверами">
+      <created>1599747737467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599747737467</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
