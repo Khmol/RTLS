@@ -6,7 +6,7 @@
 #
 # Run the build process by running the command
 #
-# C:\Python34\python.exe setup.py build_exe
+# C:\Python36_32\python.exe setup.py build_exe
 #
 # If everything works well you should find a subdirectory in the build
 # subdirectory that contains the files needed to run the application
@@ -21,17 +21,17 @@ if sys.platform == 'win32':
 
 options = {
     'build_exe': {
-        'packages':['atexit','pyexcel_xls'],
+        'packages':['atexit'],
     }
 }
 
 executables = [
-    Executable( os.path.abspath('sp_Creater.py'), base = base, icon = '11.ico')
+    Executable( os.path.abspath('RTLS.py'), base = base, icon = 'GPS.ico')
 ]
 
-setup(name='sp_Creater',
+setup(name='RTLS',
       version='1.0',
-      description='sp_Creater',
+      description='RTLS fo F9P',
       options=options,
       executables=executables
       )

@@ -1,17 +1,13 @@
 #coding: utf8
 from PyQt5.QtCore import QBasicTimer
-from PyQt5.QtGui import QColor
-from PyQt5.QtGui import QFont
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPainter
 from Ui_RTLS import *
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 import socketserver, socket
-import os, sys, threading
+import sys, threading
 import time
 from config import *
-from BIN_ASCII import Convert_ArrBite_to_ArrCharHex, Convert_ArrBite_to_ArrChar
+from BIN_ASCII import Convert_ArrBite_to_ArrChar
 from configparser import ConfigParser         # импортируем парсер ini файлов
 
 
@@ -131,7 +127,10 @@ class RTLS(QtWidgets.QMainWindow):
             self.roverQuantity = int(self.config.get('main', 'rover_quantity'))
             self.positionFilename = self.config.get('main', 'position_file')
             self.udpPort = int(self.config.get('main', 'rover_udp_port'))
-
+            self.zoom = int(self.config.get('main', 'zoom_yandex'))
+            if self.zoom > 21:
+                # max zoom 21 for yandex
+                self.zoom = 21
             for i in range(self.roverQuantity):
                 addr = self.config.get('main', 'rover_address_{}'.format(i + 1))
                 self.roverAddress.append(addr)
@@ -158,6 +157,7 @@ class RTLS(QtWidgets.QMainWindow):
         self.udpPort = DEFAULT_ROVER_UDP_PORT
         self.config.set('main', 'position_file', str(DEFAULT_POSITION_FILENAME))
         self.positionFilename = DEFAULT_POSITION_FILENAME
+        self.config.set('main', 'zoom_yandex', str(DEFAULT_ZOOM))
 
         for i in range(DEFAULT_ROVER_QUANTITY):
             self.config.set('main', 'rover_address_{}'.format(i+1), str(DEFAULT_ROVER_ADDRESS))
@@ -203,8 +203,6 @@ class RTLS(QtWidgets.QMainWindow):
             out_str = "Такого порта нет. Введите корректное значение."
             QMessageBox(QMessageBox.Warning, 'Сообщение', out_str, QMessageBox.Ok).exec()
             return
-        # запускаем обработку таймера
-        # self.mainTimer.start(DEFAULT_TIMER, self)
 
     #*********************************************************************
     def checkDeltaPosition(self, indexRover):

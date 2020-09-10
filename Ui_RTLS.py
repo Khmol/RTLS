@@ -14,12 +14,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_RTLS(object):
     def setupUi(self, RTLS):
         RTLS.setObjectName("RTLS")
-        RTLS.resize(659, 815)
-        RTLS.setMinimumSize(QtCore.QSize(415, 220))
-        RTLS.setMaximumSize(QtCore.QSize(5000, 5000))
+        RTLS.resize(660, 815)
+        RTLS.setMinimumSize(QtCore.QSize(660, 815))
+        RTLS.setMaximumSize(QtCore.QSize(660, 815))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../Users/User/.designer/backup/11.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap("../../../Users/User/.designer/backup/11.ico"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        icon.addPixmap(QtGui.QPixmap("../../../Users/Users/User/.designer/backup/11.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../../../Users/Users/User/.designer/backup/11.ico"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         RTLS.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(RTLS)
         self.centralwidget.setObjectName("centralwidget")
@@ -41,7 +41,7 @@ class Ui_RTLS(object):
         self.lineEdit_Longitude_1.setGeometry(QtCore.QRect(140, 55, 171, 20))
         self.lineEdit_Longitude_1.setObjectName("lineEdit_Longitude_1")
         self.webView = QtWebKitWidgets.QWebView(self.centralwidget)
-        self.webView.setGeometry(QtCore.QRect(10, 280, 650, 450))
+        self.webView.setGeometry(QtCore.QRect(5, 280, 650, 450))
         self.webView.setUrl(QtCore.QUrl("about:blank"))
         self.webView.setObjectName("webView")
         self.label_TitleRover2 = QtWidgets.QLabel(self.centralwidget)
@@ -240,7 +240,7 @@ class Ui_RTLS(object):
         self.graphicsView.setObjectName("graphicsView")
         RTLS.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(RTLS)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 659, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 660, 26))
         self.menubar.setObjectName("menubar")
         RTLS.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(RTLS)
@@ -254,7 +254,7 @@ class Ui_RTLS(object):
 
     def retranslateUi(self, RTLS):
         _translate = QtCore.QCoreApplication.translate
-        RTLS.setWindowTitle(_translate("RTLS", "Формирователь спецификации"))
+        RTLS.setWindowTitle(_translate("RTLS", "Проверка GNSS модулей F9P"))
         self.label_TitleRover1.setText(_translate("RTLS", "Координаты ровера 1"))
         self.pushButton_Pause.setText(_translate("RTLS", "Пауза"))
         self.label_NomRx.setText(_translate("RTLS", "0"))
