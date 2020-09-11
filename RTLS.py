@@ -30,6 +30,7 @@ class RTLS(QtWidgets.QMainWindow):
         self.ui = Ui_RTLS()
         self.ui.setupUi(self)
         # инициализация переменных
+        self.curServerAddress = ''
         self.pause = False
         self.positionFilename = ''
         self.file = None
@@ -128,6 +129,7 @@ class RTLS(QtWidgets.QMainWindow):
             self.positionFilename = self.config.get('main', 'position_file')
             self.udpPort = int(self.config.get('main', 'rover_udp_port'))
             self.zoom = int(self.config.get('main', 'zoom_yandex'))
+            self.curServerAddress = self.config.get('main', 'rover_net_address')
             if self.zoom > 21:
                 # max zoom 21 for yandex
                 self.zoom = 21
@@ -158,6 +160,7 @@ class RTLS(QtWidgets.QMainWindow):
         self.config.set('main', 'position_file', str(DEFAULT_POSITION_FILENAME))
         self.positionFilename = DEFAULT_POSITION_FILENAME
         self.config.set('main', 'zoom_yandex', str(DEFAULT_ZOOM))
+        self.config.set('main', 'rover_net_address', self.curServerAddress)
 
         for i in range(DEFAULT_ROVER_QUANTITY):
             self.config.set('main', 'rover_address_{}'.format(i+1), str(DEFAULT_ROVER_ADDRESS))
@@ -174,9 +177,13 @@ class RTLS(QtWidgets.QMainWindow):
         '''
         try:
             try:
-                pcName = socket.getfqdn()
-                indexPoint = pcName.index('.')
-                self.curServerAddress = socket.gethostbyname(pcName[0:indexPoint])
+                if self.curServerAddress == '':
+                    pcName = socket.getfqdn()
+                    indexPoint = pcName.find('.')
+                    if indexPoint > 0:
+                        self.curServerAddress = socket.gethostbyname(pcName[0:indexPoint])
+                    else:
+                        self.curServerAddress = socket.gethostbyname(pcName)
             except:
                 pass
             self.udpServer = ThreadedUDPServer((str(self.curServerAddress), DEFAULT_SERVER_UDP_PORT), ThreadedUDPRequestHandler)
@@ -187,8 +194,6 @@ class RTLS(QtWidgets.QMainWindow):
             out_str = str(EXP)
             QMessageBox(QMessageBox.Warning, 'Ошибка открытия сокета', out_str, QMessageBox.Ok).exec()
             return
-        # запускаем обработку таймера
-        # self.mainTimer.start(DEFAULT_TIMER, self)
 
     # *********************************************************************
     def UdpClientConnectHendler(self):
